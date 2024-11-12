@@ -10,22 +10,29 @@ body {
     background: #f2f2f2;
     padding: 20px;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    min-height: 100vh;
+    flex-direction: column; /* Apilar elementos verticalmente */
+    justify-content: flex-start; /* Asegura que el contenido esté al inicio */
+    min-height: 100vh; /* Hace que el cuerpo ocupe toda la altura de la ventana */
     overflow-x: hidden;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column; /* Apilar formulario y tabla en vertical */
+    justify-content: flex-start;
+    flex-grow: 1; /* Hace que el contenedor ocupe todo el espacio disponible */
+    width: 100%;
 }
 
 .container {
     background-color: white;
     width: 100%;
-    max-width: 1600px; /* El formulario puede crecer hasta 1600px */
-    min-width: 220px; /* El formulario no debe ser menor de 220px */
+    max-width: 600px; /* Limita el ancho del formulario */
+    min-width: 300px; /* Establece un ancho mínimo */
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     padding: 30px;
     margin: auto;
-    transition: width 0.3s ease-in-out; /* Suavizar el ajuste del tamaño */
 }
 
 h1 {
@@ -124,6 +131,22 @@ button:hover {
     font-size: 0.85rem;
 }
 
+/* Estilos del footer */
+footer {
+    background-color: #0a3865;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    margin-top: auto; /* Empuja el footer hacia el final */
+    width: 100%; /* Asegura que el footer ocupe todo el ancho disponible */
+}
+
+footer p {
+    margin: 5px 0;
+}
+
 /* Diseño responsivo */
 
 /* Pantallas de hasta 1024px (tablets) */
@@ -182,7 +205,10 @@ button:hover {
     }
 
     h1 {
-        font-size: 1.6rem;
+        font-size: 1.1rem;
+    }
+    h2{
+        font-size: 1.1rem;
     }
 
     .client-table th, .client-table td {
@@ -192,15 +218,15 @@ button:hover {
 
     button {
         padding: 8px 10px;
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
 
     label {
-        font-size: 0.9rem;
+        font-size: 0.6rem;
     }
 
     input, select {
-        font-size: 0.85rem;
+        font-size: 0.65rem;
         padding: 8px;
     }
 
@@ -214,11 +240,11 @@ button:hover {
     .container {
         width: 100%;
         padding: 8px;
-        min-width: 220px;  /* Asegura que el formulario no se reduzca a menos de 220px */
+        min-width: 180px;  /* Asegura que el formulario no se reduzca a menos de 220px */
     }
 
     h1 {
-        font-size: 1.2rem; /* Reducir el tamaño del título */
+        font-size: .93rem; /* Reducir el tamaño del título */
     }
 
     .client-table th, .client-table td {
@@ -232,30 +258,15 @@ button:hover {
     }
 
     label {
-        font-size: 0.75rem; /* Reducir el tamaño de la fuente de las etiquetas */
+        font-size: 0.45rem; /* Reducir el tamaño de la fuente de las etiquetas */
     }
 
     input, select {
-        font-size: 0.75rem;  /* Reducir tamaño de los inputs */
+        font-size: 0.55rem;  /* Reducir tamaño de los inputs */
         padding: 4px;  /* Reducir padding de los inputs */
     }
 
     .company-section {
         padding: 0;
     }
-}
-
-/* Estilo del footer */
-footer {
-    background-color: #0a3865;
-    color: white;
-    text-align: center;
-    padding: 12px 0;
-    margin-top: 30px;
-    font-size: 0.9rem;
-    border-radius: 10px;
-}
-
-footer p {
-    margin: 5px 0;
 }

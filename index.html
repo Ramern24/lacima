@@ -9,6 +9,7 @@
 <body>
 
 <div class="page-container">
+    <!-- Contenedor principal del formulario -->
     <div class="content-container">
         <div class="container">
             <h1>Formulario de Clientes</h1>
@@ -41,38 +42,39 @@
 
                 <button type="submit">Agregar Cliente</button>
             </form>
-
-            <!-- Sección para mostrar los clientes agregados -->
-            <div class="company-section">
-                <h2>Clientes por Compañías</h2>
-                <div class="table-wrapper">
-                    <table class="client-table">
-                        <thead>
-                            <tr>
-                                <th>Nombre del Cliente</th>
-                                <th>Compañía</th>
-                                <th>Teléfono</th>
-                                <th>Dirección</th>
-                                <th>Email</th>
-                                <th>Fecha de Ingreso</th>
-                                <th>Usuario que Ingresó</th>
-                            </tr>
-                        </thead>
-                        <tbody id="tablaClientes">
-                            <!-- Las filas de los clientes serán agregadas aquí -->
-                        </tbody>
-                    </table>
-                </div>
-            </div>
         </div>
     </div>
-    <!-- Footer -->
-    <footer>
-        <p>Nos reservamos los Derechos de Autor</p>
-        <p>La Cima Insurance Agency LLC 2025</p>
-        <p>Support - Ing. Ramón Castellón - (864)814-6294</p>
-    </footer>
+
+    <!-- Sección independiente para mostrar los clientes agregados -->
+    <div class="company-section">
+        <h2>Clientes por Compañías</h2>
+        <div class="table-wrapper">
+            <table class="client-table">
+                <thead>
+                    <tr>
+                        <th>Nombre del Cliente</th>
+                        <th>Compañía</th>
+                        <th>Teléfono</th>
+                        <th>Dirección</th>
+                        <th>Email</th>
+                        <th>Fecha de Ingreso</th>
+                        <th>Usuario que Ingresó</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaClientes">
+                    <!-- Las filas de los clientes serán agregadas aquí -->
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>
+
+<!-- Footer -->
+<footer>
+    <p>Nos reservamos los Derechos de Autor</p>
+    <p>La Cima Insurance Agency LLC 2025</p>
+    <p>Support - Ing. Ramón Castellón - (864)814-6294</p>
+</footer>
 
 <script src="script.js"></script>
 
